@@ -185,6 +185,7 @@ for delta = [ 0 5 10]
     
     % Pick the best SDR value after the end of the so-called
     % increase-decrease method. 
+    % The variable final_SDR_2 provides the SDR value corresponding to the Proposed ACOSQ with r = (1 3). 
     final_SDR_2 = zeros(SIZE , 1) ;
     for i = 1 : SIZE
         index = find (noise == i) ;
@@ -195,7 +196,7 @@ for delta = [ 0 5 10]
         fprintf (FileID , '\nfinal_SDR_2 = %f' , final_SDR_2(i)) ;
         fprintf (FileID , '\nindex = %d\n' , index) ;
     end
-    
+    % The variable final_SDR_3 provides the SDR value corresponding to the Proposed ACOSQ with r = (1 1 2). 
     final_SDR_3 = zeros(SIZE , 1) ;
     for i = 1 : SIZE
         index = find (noise == i) ;
@@ -206,7 +207,7 @@ for delta = [ 0 5 10]
         fprintf (FileID , '\nfinal_SDR_3 = %f' , final_SDR_3(i)) ;
         fprintf (FileID , '\nindex = %d\n' , index) ;
     end
-    
+    % The variable final_SDR_4 provides the SDR value corresponding to the Proposed ACOSQ with r = (1 1 1 1). 
     final_SDR_4 = zeros(SIZE , 1) ;
     for i = 1 : SIZE
         index = find (noise == i) ;
